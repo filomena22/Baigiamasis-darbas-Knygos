@@ -8,23 +8,23 @@ namespace Framework.Pages
         public static void ClickButtonPrisijungtiRegistruotis()
         {
             Common.ClickElement(Locators.Login.buttonPrisijungti);
-            Common.WaitForElementToBeVisible(Locators.Login.buttonPrisijungti);
+            
 
         }
 
         public static void InputElPastoAdresas (string valueElPastoAdresas)
         {
-            Common.SendKeys((string)Locators.Login.inputElPastoAdresas, valueElPastoAdresas);
+            Common.SendKeys(Locators.Login.inputElPastoAdresass, valueElPastoAdresas);
         }
 
         public static void InputSlaptazodis(string valueSlaptazodis)
         {
-            Common.SendKeys((string)Locators.Login.inputSlaptazodis, valueSlaptazodis);
+            Common.SendKeys(Locators.Login.inputSlaptazodiss, valueSlaptazodis);
         }
 
         public static void ClickButtonPrisijungti()
         {
-            Common.ClickElement(Locators.Login.buttonPrisijungti);
+            Common.ClickElement(Locators.Login.buttonSubmit);
             
         }
 

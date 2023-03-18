@@ -8,7 +8,6 @@ namespace Tests
 {
     internal class RegistrationTest : BaseTest
     {
-        private object actualMessage;
 
         [SetUp]
         public void Open()

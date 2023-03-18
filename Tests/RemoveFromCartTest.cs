@@ -8,7 +8,6 @@ namespace Tests
 {
     internal class RemoveFromCartTest : BaseTest
     {
-        public object CartMessage { get; private set; }
 
         [SetUp]
         public void Open()

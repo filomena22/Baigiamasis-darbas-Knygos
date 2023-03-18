@@ -22,7 +22,7 @@ namespace Tests
             string valueElPastoAdresas = "testerknygos@gmail.com";
             string valueSlaptazodis = "tester@22";
 
-            Login.ClickButtonPrisijungti();
+            Login.ClickButtonPrisijungtiRegistruotis();
             Login.InputElPastoAdresas(valueElPastoAdresas);
             Login.InputSlaptazodis(valueSlaptazodis);
             Login.ClickButtonPrisijungti();

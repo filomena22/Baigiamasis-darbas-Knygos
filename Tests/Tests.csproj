@@ -49,7 +49,7 @@
   <ItemGroup>
     <Compile Include="AddToCartTest.cs" />
     <Compile Include="BaseTest.cs" />
-    <Compile Include="CopyCodeTest.cs" />
+    <Compile Include="RegistrationTest.cs" />
     <Compile Include="LoginTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveFromCartTest.cs" />

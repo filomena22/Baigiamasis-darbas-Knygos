@@ -7,40 +7,28 @@ namespace Tests
 {
     internal class AddToCart : BaseTest
     {
+        public object CartMessage { get; private set; }
+
         [SetUp]
         public void Open()
         {
             Driver.OpenUrl("https://www.knygos.lt/");
-            
+
         }
 
         [Test]
         public void AddProductToCart()
         {
-            string expectedResult = "Iš viso 10";
+            string expectedResult = "Dovanu kuponas";
 
             AddToCart.ClickDovanuKuponaiButton();
             AddToCart.Click10Button();
             AddToCart.ClickIKrepseliButton();
-            
-           
+
+            Assert.AreEqual(expectedResult, AddToCart.CartMessage());
 
 
-        }
-
-        private static void ClickIKrepseliButton()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Click10Button()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void ClickDovanuKuponaiButton()
-        {
-            throw new NotImplementedException();
         }
     }
+
 }

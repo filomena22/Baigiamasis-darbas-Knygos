@@ -1,14 +1,15 @@
-﻿using OpenQA.Selenium;
+﻿
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.Extensions;
+using OpenQA.Selenium.Support.UI;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Framework.Pages
 {
     internal class Common
     {
+        public static object ExpectedConditions { get; private set; }
+
         private static IWebElement GetElement(string locator)
         {
             return Driver.GetDriver().FindElement(By.XPath(locator));
@@ -19,25 +20,20 @@ namespace Framework.Pages
             GetElement(locator).Click();
         }
 
-        internal static void SendKeys(object inputSlaptazodis, string valueSlaptazodis)
+        internal static void SendKeys(string locator, string keys)
         {
-            throw new NotImplementedException();
+            GetElement(locator).SendKeys(keys);
         }
 
-        internal static void ClickElement(object buttonPrisijungti)
+        internal static string GetElementText(string locator)
         {
-            throw new NotImplementedException();
+            return GetElement(locator).Text;
         }
 
-        internal static void ClickElement(object buttonCheckBox1)
+        internal static void WaitForElementToBeVisible(string locator)
         {
-            throw new NotImplementedException();
-        }
-
-        internal static void ClickElement(object dovanuKuponaiButton)
-        {
-            throw new NotImplementedException();
+            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
         }
     }
-
 }

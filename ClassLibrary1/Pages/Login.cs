@@ -1,20 +1,31 @@
-﻿namespace Framework.Pages
+﻿
+
+namespace Framework.Pages
 {
     public class Login
     {
+
+        public static void ClickButtonPrisijungtiRegistruotis()
+        {
+            Common.ClickElement(Locators.Login.buttonPrisijungti);
+            Common.WaitForElementToBeVisible(Locators.Login.buttonPrisijungti);
+
+        }
+
         public static void InputElPastoAdresas (string valueElPastoAdresas)
         {
-            Common.SendKeys(Locators.Login.inputElPastoAdresas, valueElPastoAdresas);
+            Common.SendKeys((string)Locators.Login.inputElPastoAdresas, valueElPastoAdresas);
         }
 
         public static void InputSlaptazodis(string valueSlaptazodis)
         {
-            Common.SendKeys(Locators.Login.inputSlaptazodis, valueSlaptazodis);
+            Common.SendKeys((string)Locators.Login.inputSlaptazodis, valueSlaptazodis);
         }
 
         public static void ClickButtonPrisijungti()
         {
             Common.ClickElement(Locators.Login.buttonPrisijungti);
+            
         }
 
         public static string GetRedirectedUrl()

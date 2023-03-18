@@ -8,6 +8,8 @@ namespace Tests
 {
     internal class RemoveFromCartTest : BaseTest
     {
+        public object CartMessage { get; private set; }
+
         [SetUp]
         public void Open()
         {
@@ -16,18 +18,16 @@ namespace Tests
         }
 
         [Test]
-        public void RegisterFormWithValidData()
+        public void RemoveFromCartItem()
         {
-            string expectedResult = "https://www.knygos.lt/";
-            string valueElPastoAdresas = "testerknygos@gmail.com";
-            string valueSlaptazodis = "tester@22";
+            string expectedText = "Jūsų prekių krepšelis tuščias";
 
             RemoveFromCart.ClickDovanuKuponaiButton();
             RemoveFromCart.Click20Button();
             RemoveFromCart.ClickIKrepseliButton();
             RemoveFromCart.ClickRecycleButton();
 
-            Assert.AreEqual(expectedResult, Login.GetRedirectedUrl());
+            Assert.AreEqual(expectedText, RemoveFromCart.CartMessageEmpty());
         }
     }
 }

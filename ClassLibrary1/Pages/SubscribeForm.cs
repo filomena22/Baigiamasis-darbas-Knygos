@@ -21,9 +21,14 @@ namespace Framework.Pages
 
         public static void ClickButtonPrenumeruoti()
         {
-            Common.ClickElement(Locators.SubscribeForm.buttonCheckBox1);
+            Common.ClickElement(Locators.SubscribeForm.buttonPrenumeruoti);
         }
 
+        public static string SubscribeMessage()
+        {
+            return Common.GetElementText(Locators.SubscribeForm.Subscribe);
+
+        }
         public static string GetRedirectedUrl()
         {
             return Driver.GetDriver().Url;

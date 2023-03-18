@@ -2,13 +2,13 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.Extensions;
 using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 using System;
 
 namespace Framework.Pages
 {
     internal class Common
     {
-        public static object ExpectedConditions { get; private set; }
 
         private static IWebElement GetElement(string locator)
         {

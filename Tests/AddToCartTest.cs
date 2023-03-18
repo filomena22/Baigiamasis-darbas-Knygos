@@ -5,9 +5,8 @@ using System;
 
 namespace Tests
 {
-    internal class AddToCart : BaseTest
+    internal class AddToCartTest : BaseTest
     {
-        public object CartMessage { get; private set; }
 
         [SetUp]
         public void Open()

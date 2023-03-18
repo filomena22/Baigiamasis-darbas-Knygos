@@ -9,7 +9,6 @@ namespace Tests
 {
     internal class SubscribeFormTest : BaseTest
     {
-        private object actualMessage;
 
         [SetUp]
         public void Open()
@@ -32,7 +31,7 @@ namespace Tests
             SubscribeForm.ClickButtonPrenumeruoti();
 
 
-            Assert.AreEqual(expectedText, AddToCart.SubscribeMessage());
+            Assert.AreEqual(expectedText, SubscribeForm.SubscribeMessage());
 
 
         }

@@ -36,7 +36,7 @@ namespace Framework.Pages
             internal static string buttonDovanuKuponai = "//*[@id='footer-wrapper']/div/div[8]/ul/li[1]/h4/a";
             internal static string buttonIKrepseli = "//*[@id='add_to_cart_single_add_to_cart']";
             internal static string DovanuKuponaiButton = "//*[@id='footer-wrapper']/div/div[8]";
-            internal static string button20 = "//*[@id='add_to_cart_single_custom_params_value_value_preset_1'];";
+            internal static string button20 = "//*[@id='add_to_cart_single_custom_params_value_value_preset_1']";
             internal static string buttonRecycle = "//*[@id='cart_items_items_16087986_remove']";
         }
 

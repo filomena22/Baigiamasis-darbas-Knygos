@@ -14,12 +14,12 @@ namespace Framework.Pages
 
         public static void InputElPastoAdresas (string valueElPastoAdresas)
         {
-            Common.SendKeys(Locators.Login.inputElPastoAdresass, valueElPastoAdresas);
+            Common.SendKeys(Locators.Login.inputElPastoAdresas, valueElPastoAdresas);
         }
 
         public static void InputSlaptazodis(string valueSlaptazodis)
         {
-            Common.SendKeys(Locators.Login.inputSlaptazodiss, valueSlaptazodis);
+            Common.SendKeys(Locators.Login.inputSlaptazodis, valueSlaptazodis);
         }
 
         public static void ClickButtonPrisijungti()

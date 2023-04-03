@@ -9,7 +9,6 @@ namespace Framework.Pages
         {
             Common.ClickElement(Locators.Login.buttonPrisijungti);
             
-
         }
 
         public static void InputElPastoAdresas (string valueElPastoAdresas)

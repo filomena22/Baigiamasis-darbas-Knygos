@@ -8,6 +8,7 @@ namespace Framework
 
         public static void ClickDovanuKuponaiButton()
         {
+            Common.WaitForElementToBeVisible(Locators.AddToCart.dovanuKuponaiButton);
             Common.ClickElement(Locators.AddToCart.dovanuKuponaiButton);
         }
 

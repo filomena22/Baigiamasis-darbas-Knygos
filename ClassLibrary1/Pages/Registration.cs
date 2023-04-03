@@ -27,11 +27,11 @@
         }
         public static void InputElPastoAdresas(string valueElPastoAdresas)
         {
-            Common.SendKeys(Locators.Registration.inputTelefonas, valueElPastoAdresas);
+            Common.SendKeys(Locators.Registration.inputElPastoAdresas, valueElPastoAdresas);
         }
         public static void InputSlaptazodis(string valueSlaptazodis)
         {
-            Common.SendKeys(Locators.Registration.inputTelefonas, valueSlaptazodis);
+            Common.SendKeys(Locators.Registration.inputSlaptazodis, valueSlaptazodis);
         }
 
         public static void InputPakartotiSlaptazodi(string valuePakartotiSlaptazodi)

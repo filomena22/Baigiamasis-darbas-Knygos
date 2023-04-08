@@ -8,15 +8,15 @@ namespace Tests
         [Test]
         public void SubscribeFormWithValidData()
         {
-            string expectedText = "BeveikBaigta...";
+            string expectedText = "Beveik baigta...";
             string valueElPastoAdresas = "testerknygos@gmail.com";
 
             SubscribeForm.InputElPastoAdresas(valueElPastoAdresas);
             SubscribeForm.ClickButtonCheckBox1();
             SubscribeForm.ClickButtonCheckBox2();
-            SubscribeForm.ClickButtonPrenumeruoti();
+            string parentWindowHandle = SubscribeForm.ClickButtonPrenumeruoti();
 
-            Assert.AreEqual(expectedText, SubscribeForm.SubscribeMessage());
+            Assert.AreEqual(expectedText, SubscribeForm.SubscribeMessage(parentWindowHandle));
         }
     }
 }

@@ -42,7 +42,7 @@
             internal static string buttonCheckBox1 = "//*[@id='mc_embed_signup_scroll']/fieldset/div[1]/label";
             internal static string buttonCheckBox2 = "//*[@id='mc_embed_signup_scroll']/fieldset/div[2]/label";
             internal static string buttonPrenumeruoti = "//*[@id='mc-embedded-subscribe']";
-            internal static string Subscribe;
+            internal static string Subscribe = "//*[@id='templateBody']/h2";
         }
 
         internal static class Registration

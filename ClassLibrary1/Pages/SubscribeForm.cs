@@ -9,27 +9,28 @@
 
         public static void ClickButtonCheckBox1()
         {
-            Common.ClickElement(Locators.SubscribeForm.buttonCheckBox1);
+            Common.ScrollAndClickElement(Locators.SubscribeForm.buttonCheckBox1);
         }
 
         public static void ClickButtonCheckBox2()
         {
-            Common.ClickElement(Locators.SubscribeForm.buttonCheckBox2);
+            Common.ScrollAndClickElement(Locators.SubscribeForm.buttonCheckBox2);
         }
 
-        public static void ClickButtonPrenumeruoti()
+        public static string ClickButtonPrenumeruoti()
         {
-            Common.ClickElement(Locators.SubscribeForm.buttonPrenumeruoti);
+            string currentWindowHandle = Common.GetCurrentWindowHandle();
+            Common.ScrollAndClickElement(Locators.SubscribeForm.buttonPrenumeruoti);
+
+            return currentWindowHandle;
         }
 
-        public static string SubscribeMessage()
+        public static string SubscribeMessage(string parentWindowHandle)
         {
+            Common.SwitchToNewTabFromParentTab(parentWindowHandle);
+            Common.WaitForElementToBeVisible(Locators.SubscribeForm.Subscribe);
             return Common.GetElementText(Locators.SubscribeForm.Subscribe);
 
-        }
-        public static string GetRedirectedUrl()
-        {
-            return Driver.GetDriver().Url;
         }
     }
 }

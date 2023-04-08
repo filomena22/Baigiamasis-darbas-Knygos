@@ -6,7 +6,10 @@ namespace Framework.Pages
 {
     internal class Locators
     {
-        
+        internal static class Home
+        {
+            internal static string buttonRejectCookies = "//*[@aria-label='deny cookies']";
+        }
 
         internal static class Login
         {

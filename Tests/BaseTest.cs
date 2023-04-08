@@ -1,4 +1,5 @@
-﻿using Framework;
+﻿using ClassLibrary1.Pages;
+using Framework;
 using Framework.Pages;
 using NUnit.Framework;
 
@@ -11,6 +12,7 @@ namespace Tests
         {
             Driver.SetupDriver();
             Driver.OpenUrl("https://www.knygos.lt/");
+            Home.CloseCookies();
         }
 
         [TearDown]

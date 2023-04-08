@@ -57,7 +57,7 @@
             internal static string checkbox = "//*[@id='registration_agree_to_tos']";
             internal static string prisijungtiButton = "//*[@id='hr-1']/div[4]/div/div[2]/a";
             internal static string registerButton = "//*[@id='registration_submit']";
-            internal static string klaida;
+            internal static string klaida = "//*[@class='form-error-message']";
             internal static string registruotisButton = "//a[@class='btn btn-primary btn-block']";
         }
     }

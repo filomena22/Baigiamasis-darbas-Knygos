@@ -8,10 +8,10 @@ namespace Tests
         [Test]
         public void RegistrationFormWithInvalidEmail()
         {
-            string expectedText = "KLAIDA Nurodytas klaidingas el.pašto adresas";
+            string expectedText = "Nurodytas klaidingas el. pašto adresas, mes negalėsime pristatyti su užsakymu susijusių laiškų";
             string valueVardas = "testas";
             string valuePavarde = "testukas";
-            string valueTelefonas = "+370600000000";
+            string valueTelefonas = "+37060000000";
             string valueElPastoAdresas = "test@22";
             string valueSlaptazodis = "testukas22";
             string valuePakartotiSlaptazodi = "testukas22";

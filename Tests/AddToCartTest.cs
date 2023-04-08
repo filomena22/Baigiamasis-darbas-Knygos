@@ -8,9 +8,10 @@ namespace Tests
         [Test]
         public void AddProductToCart()
         {
-            string expectedResult = "Dovanu kuponas";
+            string expectedResult = "Knygos.lt dovanų kuponas (atsispausdink pats)";
 
-            AddToCart.ClickDovanuKuponaiButton();
+            Home.OpenVisosKnygosMeniu();
+            Home.VisosKnygosMeniu.ClickDovanuKuponaiButton();
             AddToCart.Click10Button();
             AddToCart.ClickIKrepseliButton();
 

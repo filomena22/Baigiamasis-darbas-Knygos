@@ -1,33 +1,21 @@
-﻿using Framework;
-using Framework.Pages;
+﻿using Framework.Pages;
 using NUnit.Framework;
-using System;
 
 namespace Tests
 {
     internal class AddToCartTest : BaseTest
     {
-
-        [SetUp]
-        public void Open()
-        {
-            Driver.OpenUrl("https://www.knygos.lt/");
-
-        }
-
         [Test]
         public void AddProductToCart()
         {
-            string expectedResult = "Dovanu kuponas";
+            string expectedResult = "Knygos.lt dovanų kuponas (atsispausdink pats)";
 
-            AddToCart.ClickDovanuKuponaiButton();
+            Home.OpenVisosKnygosMeniu();
+            Home.VisosKnygosMeniu.ClickDovanuKuponaiButton();
             AddToCart.Click10Button();
             AddToCart.ClickIKrepseliButton();
 
             Assert.AreEqual(expectedResult, AddToCart.CartMessage());
-
-
         }
     }
-
 }

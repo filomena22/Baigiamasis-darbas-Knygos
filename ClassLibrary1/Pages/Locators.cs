@@ -1,12 +1,17 @@
-﻿using OpenQA.Selenium;
-using System;
-using System.Deployment.Internal;
-
-namespace Framework.Pages
+﻿namespace Framework.Pages
 {
     internal class Locators
     {
-        
+        internal static class Home
+        {
+            internal static string buttonRejectCookies = "//*[@aria-label='deny cookies']";
+            internal static string buttonVisosKnygosMeniu = "//*[@id='all-products-mob']";
+
+            internal static class VisosKnygosMeniu
+            {
+                internal static string buttonDovanuKuponai = "//*[@class='gift-red']";
+            }
+        }
 
         internal static class Login
         {
@@ -19,11 +24,9 @@ namespace Framework.Pages
 
         internal static class AddToCart
         {
-
-            internal static string dovanuKuponaiButton = "//a[@href='https://www.knygos.lt/lt/dovanu-kuponai/knygos-lt-dovanu-kuponas-atsispausdink-pats/']";
             internal static string IKrepseliButton = "//*[@id='add_to_cart_single_add_to_cart']";
             internal static string dovanukuponasTitle = "//*[@id='cart-items']/div[2]/div[1]/div/div[1]/a";
-            internal static string Button = "//*[@id='add_to_cart_single_custom_params_value_value_preset']/span[1]/label";
+            internal static string Button = "//*[@for='add_to_cart_single_custom_params_value_value_preset_0']";
         }
 
         internal static class RemoveFromCart
@@ -43,7 +46,7 @@ namespace Framework.Pages
             internal static string buttonCheckBox1 = "//*[@id='mc_embed_signup_scroll']/fieldset/div[1]/label";
             internal static string buttonCheckBox2 = "//*[@id='mc_embed_signup_scroll']/fieldset/div[2]/label";
             internal static string buttonPrenumeruoti = "//*[@id='mc-embedded-subscribe']";
-            internal static string Subscribe;
+            internal static string Subscribe = "//*[@id='templateBody']/h2";
         }
 
         internal static class Registration
@@ -58,9 +61,8 @@ namespace Framework.Pages
             internal static string checkbox = "//*[@id='registration_agree_to_tos']";
             internal static string prisijungtiButton = "//*[@id='hr-1']/div[4]/div/div[2]/a";
             internal static string registerButton = "//*[@id='registration_submit']";
-            internal static string klaida;
+            internal static string klaida = "//*[@class='form-error-message']";
             internal static string registruotisButton = "//a[@class='btn btn-primary btn-block']";
         }
     }
 }
-

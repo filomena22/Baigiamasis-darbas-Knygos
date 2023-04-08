@@ -11,6 +11,7 @@
         {
             Common.ClickElement(Locators.Registration.registruotisButton);
         }
+
         public static void InputVardas(string valueVardas)
         {
             Common.SendKeys(Locators.Registration.inputVardas, valueVardas);
@@ -25,10 +26,12 @@
         {
             Common.SendKeys(Locators.Registration.inputTelefonas, valueTelefonas);
         }
+
         public static void InputElPastoAdresas(string valueElPastoAdresas)
         {
             Common.SendKeys(Locators.Registration.inputElPastoAdresas, valueElPastoAdresas);
         }
+
         public static void InputSlaptazodis(string valueSlaptazodis)
         {
             Common.SendKeys(Locators.Registration.inputSlaptazodis, valueSlaptazodis);
@@ -54,6 +57,7 @@
             return Common.GetElementText(Locators.Registration.klaida);
 
         }
+
         public static string GetRedirectedUrl()
         {
             return Driver.GetDriver().Url;

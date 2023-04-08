@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Framework.Pages
+﻿namespace Framework.Pages
 {
     public class SubscribeForm
     {
@@ -35,8 +33,3 @@ namespace Framework.Pages
         }
     }
 }
-
-
-
-
-

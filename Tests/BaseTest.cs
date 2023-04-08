@@ -1,5 +1,4 @@
-﻿using ClassLibrary1.Pages;
-using Framework;
+﻿using Framework;
 using Framework.Pages;
 using NUnit.Framework;
 

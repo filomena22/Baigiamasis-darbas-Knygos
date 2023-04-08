@@ -1,11 +1,9 @@
-﻿
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.Extensions;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
 
-namespace Framework.Pages
+namespace Framework
 {
     internal class Common
     {

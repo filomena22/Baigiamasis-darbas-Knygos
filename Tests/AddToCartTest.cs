@@ -1,7 +1,5 @@
-﻿using Framework;
-using Framework.Pages;
+﻿using Framework.Pages;
 using NUnit.Framework;
-using System;
 
 namespace Tests
 {
@@ -17,9 +15,6 @@ namespace Tests
             AddToCart.ClickIKrepseliButton();
 
             Assert.AreEqual(expectedResult, AddToCart.CartMessage());
-
-
         }
     }
-
 }

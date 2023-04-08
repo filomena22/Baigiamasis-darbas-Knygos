@@ -1,8 +1,5 @@
-﻿using Framework;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Framework.Pages;
-using System;
-using System.Security.AccessControl;
 
 namespace Tests
 {
@@ -31,9 +28,6 @@ namespace Tests
             Registration.ClickSubmitButton();
 
             Assert.AreEqual(expectedText, Registration.MessageFail());
-
-
-
         }
     }
 }

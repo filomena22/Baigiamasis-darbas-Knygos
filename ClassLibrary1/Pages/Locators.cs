@@ -1,8 +1,4 @@
-﻿using OpenQA.Selenium;
-using System;
-using System.Deployment.Internal;
-
-namespace Framework.Pages
+﻿namespace Framework.Pages
 {
     internal class Locators
     {
@@ -66,4 +62,3 @@ namespace Framework.Pages
         }
     }
 }
-

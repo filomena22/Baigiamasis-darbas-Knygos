@@ -1,9 +1,5 @@
-﻿using Framework;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Framework.Pages;
-using System;
-using System.Security.AccessControl;
-using Microsoft.Win32;
 
 namespace Tests
 {
@@ -15,20 +11,12 @@ namespace Tests
             string expectedText = "BeveikBaigta...";
             string valueElPastoAdresas = "testerknygos@gmail.com";
 
-
-
             SubscribeForm.InputElPastoAdresas(valueElPastoAdresas);
             SubscribeForm.ClickButtonCheckBox1();
             SubscribeForm.ClickButtonCheckBox2();
             SubscribeForm.ClickButtonPrenumeruoti();
 
-
             Assert.AreEqual(expectedText, SubscribeForm.SubscribeMessage());
-
-
         }
-
-
     }
-
-    }
+}

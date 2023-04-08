@@ -1,6 +1,4 @@
-﻿using Framework.Pages;
-
-namespace ClassLibrary1.Pages
+﻿namespace Framework.Pages
 {
     public class Home
     {

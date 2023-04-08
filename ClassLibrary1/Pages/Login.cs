@@ -1,6 +1,4 @@
-﻿
-
-namespace Framework.Pages
+﻿namespace Framework.Pages
 {
     public class Login
     {
@@ -33,7 +31,3 @@ namespace Framework.Pages
         }
     }
 }
-        
-
-    
-

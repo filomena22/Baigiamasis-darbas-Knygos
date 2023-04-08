@@ -61,8 +61,8 @@
     <Compile Include="Pages\Home.cs" />
     <Compile Include="Pages\Registration.cs" />
     <Compile Include="Pages\Locators.cs" />
-    <Compile Include="Pages\Driver.cs" />
-    <Compile Include="Pages\Common.cs" />
+    <Compile Include="Driver.cs" />
+    <Compile Include="Common.cs" />
     <Compile Include="Pages\Login.cs" />
     <Compile Include="Pages\RemoveFromCart.cs" />
     <Compile Include="Pages\SubscribeForm.cs" />

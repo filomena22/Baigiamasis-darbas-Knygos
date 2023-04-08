@@ -6,6 +6,7 @@ namespace Framework
     public class Driver
     {
         private static IWebDriver driver;
+
         public static void SetupDriver()
         {
             ChromeOptions options = new ChromeOptions();

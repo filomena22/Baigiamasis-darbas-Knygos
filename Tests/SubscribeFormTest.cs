@@ -9,14 +9,6 @@ namespace Tests
 {
     internal class SubscribeFormTest : BaseTest
     {
-
-        [SetUp]
-        public void Open()
-        {
-            Driver.OpenUrl("https://www.knygos.lt/");
-
-        }
-
         [Test]
         public void SubscribeFormWithValidData()
         {

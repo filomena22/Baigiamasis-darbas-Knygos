@@ -8,14 +8,6 @@ namespace Tests
 {
     internal class RegistrationTest : BaseTest
     {
-
-        [SetUp]
-        public void Open()
-        {
-            Driver.OpenUrl("https://www.knygos.lt/");
-
-        }
-
         [Test]
         public void RegistrationFormWithInvalidEmail()
         {

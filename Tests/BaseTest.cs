@@ -10,6 +10,7 @@ namespace Tests
         public void Setup()
         {
             Driver.SetupDriver();
+            Driver.OpenUrl("https://www.knygos.lt/");
         }
 
         [TearDown]

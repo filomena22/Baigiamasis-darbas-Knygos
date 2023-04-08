@@ -7,14 +7,6 @@ namespace Tests
 {
     internal class AddToCartTest : BaseTest
     {
-
-        [SetUp]
-        public void Open()
-        {
-            Driver.OpenUrl("https://www.knygos.lt/");
-
-        }
-
         [Test]
         public void AddProductToCart()
         {

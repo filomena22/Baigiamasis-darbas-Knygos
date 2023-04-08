@@ -8,13 +8,6 @@ namespace Tests
 {
     internal class LoginTest : BaseTest
     {
-        [SetUp]
-        public void Open()
-        {
-            Driver.OpenUrl("https://www.knygos.lt/");
-            
-        }
-
         [Test]
         public void LoginFormWithValidData()
         {
